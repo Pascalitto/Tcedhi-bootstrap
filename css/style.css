@@ -96,3 +96,6 @@ a:hover {
 .button-color {
 	background-color: #E82C0C;
 }
+#mail {
+	list-style-type: none;
+	}

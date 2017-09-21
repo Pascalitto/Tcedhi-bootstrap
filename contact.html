@@ -71,90 +71,55 @@
   </div><!-- /.container-fluid -->
 </nav>
 
-
-<div id="wrapper">
-  <h1>LES ACCESSOIRES AVEC UNE TOUCHE D'AFRIQUE</h1>
-  <h2>Aimez les - Vivez les</h2>
-  <button type="button" class="btn btn-default" data-toggle="modal" data-target="#register">Register</button>
-</div>
-
-<!-- Modal -->
-<div class="modal fade" id="register" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-     <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="myModalLabel">Register</h4>
-      </div>
-      <div class="modal-body">
-       <div id="wufoo-zr0dbvm005khyd">
-Fill out my <a href="https://neyano.wufoo.com/forms/zr0dbvm005khyd">online form</a>.
-</div>
-<div id="wuf-adv" style="font-family:inherit;font-size: small;color:#a7a7a7;text-align:center;display:block;">Use <a href="http://www.wufoo.com/gallery/templates/">Wufoo templates</a> to make your own HTML forms.</div>
-<script type="text/javascript">var zr0dbvm005khyd;(function(d, t) {
-var s = d.createElement(t), options = {
-'userName':'neyano',
-'formHash':'zr0dbvm005khyd',
-'autoResize':true,
-'height':'849',
-'async':true,
-'host':'wufoo.com',
-'header':'show',
-'ssl':true};
-s.src = ('https:' == d.location.protocol ? 'https://' : 'http://') + 'www.wufoo.com/scripts/embed/form.js';
-s.onload = s.onreadystatechange = function() {
-var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return;
-try { zr0dbvm005khyd = new WufooForm();zr0dbvm005khyd.initialize(options);zr0dbvm005khyd.display(); } catch (e) {}};
-var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr);
-})(document, 'script');</script>
-      </div>
-      <!--<div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
-      </div>-->
-    </div>
-  </div>
-</div>
-
 <div class="spacer"></div>
 
-  <div id="containerglobal">
-    <div id="teaser" class="text-center">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-4 feature"> 
-           <img src="images/noun_593557_cc.png" alt="masque africain" width="70" class="circle">
-            <p> De la Déco, des Bijoux - le plein d'<strong>accessoires</strong>!</p>
-          </div>
-          <div class="col-md-4 feature"> 
-            <img src="images/noun_695190_cc.png" alt="carte afrique" width="70" class="circle">
-            <p> Une touche d'<strong>Afrique</strong>, mais seulement une touche!</p>
-          </div>
-          <div class="col-md-4 feature"> 
-            <img src="images/noun_1125139_cc.png" alt="photo de sac" width="70" class="circle">
-            <p> De la <strong>qualité</strong>, de la <strong>qualité</strong> et encore de la <strong>qualité</strong>!</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-
-<div class="spacer"></div>
-
-<div class="container"> 
+<div class="container">
   <div class="row">
-     <div class="col-xs-12 text-center">
-     <!-- Begin MailChimp Signup Form -->
-<h2>Inscrivez-vous à notre Newsletter !</h2>
-<div id="mc_embed_signup">
- <form action="http://neyano.us16.list-manage.com/subscribe/post?u=24797bbef847c996f4f674ffe&amp;id=1af41e795a" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate form-inline" target="_blank" novalidate>
-      
-      <input type="email" value="" name="EMAIL" class="email form-control" id="mce-EMAIL" placeholder="email address" required>
-      <input type="submit" value="Suivez-nous"  name="subscribe" id="mc-embedded-subscribe" class="btn-default">
-  </form>
-</div>
-    </div>
+      <div class="col-sm-6"> 
+      <div id="map" style="width: 100%; height: 400px;"></div>
+
+      <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js"></script>
+
+      <script type="text/javascript">
+      var myLatlng = new google.maps.LatLng(31.1815270,121.3892510);
+
+      var myOptions = {
+      zoom: 14,
+      center: myLatlng,
+      mapTypeId: google.maps.MapTypeId.ROADMAP,
+        styles: []
+        };
+
+      var map = new google.maps.Map(document.getElementById('map'), myOptions);
+      var marker = new google.maps.Marker({
+      position: myLatlng,
+      map: map,
+      title: "You are here!"
+      });
+      </script>
+      </div>
+       <div class="col-sm-6"> 
+        <h1>Contact</h1>
+        <div id="address">
+         <ADDRESS>
+         <i class="fa fa-map-marker" aria-hidden="true"></i> 
+          HongMei Garden<br>
+          HongMei lu 2989<br>
+          01103 Shanghai<br>
+          CHINA<br>
+          </ADDRESS>
+        </div>
+        <div id="contact">
+          <p>
+          <ul id="mail">
+            <li> <a href="mailto:pascal@neyano.com"><i class="fa fa-paper-plane-o" aria-hidden="true"></i>pascal@neyano.com</a></li>
+            <li><a href="tel:13020700116"><i class="fa fa-mobile" aria-hidden="true"></i>
+            Call +86(000)0000-0000</a> </li>
+          </ul>
+          </p>
+        </div>
+
+       </div>
   </div>
 </div>
 
